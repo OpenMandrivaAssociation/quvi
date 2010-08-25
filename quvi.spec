@@ -46,7 +46,7 @@ It is not, nor intended to become, an universal flash video download tool.
 %setup -q
 
 %build
-%configure
+%configure2_5x
 %make
 
 %install
@@ -60,7 +60,6 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(-,root,root)
 %_bindir/*
 %_datadir/%{name}
-%_docdir/%{name}
 %_mandir/man*/%{name}.*
 %doc KNOWN_ISSUES ChangeLog README NEWS
 
