@@ -1,22 +1,21 @@
 %define name  quvi
-%define version 0.2.2
+%define version 0.2.12
 %define release %mkrel 1
 
 %define libname %mklibname %name 0
-%define libnamedevel %{_lib}%{name}-devel
+%define libnamedevel %mklibname -d %{name}
 
 Summary: A command line video download tool
 Name: %{name}
 Version: %{version}
 Release: %{release}
-Source0: %{name}-%{version}.tar.bz2
+Source0: http://downloads.sourceforge.net/quvi/%{name}-%{version}.tar.xz
 License: GPLv3
 Group: Networking/WWW
-Url: http://code.google.com/p/cclive/
+Url: http://cclive.sourceforge.net/
 BuildRoot: %{_tmppath}/%{name}-buildroot
 BuildRequires: lua-devel >= 5.1
 BuildRequires: curl-devel
-BuildRequires: libpcre-devel
 
 %description
 cclive is a command line video download tool for Youtube and similar websites.
