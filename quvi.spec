@@ -9,7 +9,7 @@ Summary: A command line tool originally created to aid the development of libquv
 Name: %{name}
 Version: %{version}
 Release: %{release}
-Source0: http://downloads.sourceforge.net/quvi/%{name}-%{version}.tar.bz2
+Source0: http://downloads.sourceforge.net/quvi/%{name}-%{version}.tar.xz
 License: GPLv3
 Group: Networking/WWW
 Url: http://quvi.sourceforge.net/
