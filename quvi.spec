@@ -1,21 +1,16 @@
-%define name  quvi
-%define version 0.2.19
-%define release %mkrel 1
-
 %define libname %mklibname %{name} 6
 %define libnamedevel %mklibname -d %{name}
 
-Summary: A command line tool originally created to aid the development of libquvi
-Name: %{name}
-Version: %{version}
-Release: %{release}
-Source0: http://downloads.sourceforge.net/quvi/%{name}-%{version}.tar.xz
-License: GPLv3
-Group: Networking/WWW
-Url: http://quvi.sourceforge.net/
-BuildRoot: %{_tmppath}/%{name}-buildroot
-BuildRequires: lua-devel >= 5.1
-BuildRequires: curl-devel
+Name:		quvi
+Version:	0.2.19
+Release:	%mkrel 2
+Summary:	A command line tool originally created to aid the development of libquvi
+Source0:	http://downloads.sourceforge.net/quvi/%{name}-%{version}.tar.xz
+License:	GPLv3
+Group:		Networking/WWW
+Url:		http://quvi.sourceforge.net/
+BuildRequires:	lua-devel >= 5.1
+BuildRequires:	curl-devel
 
 %description
 A libquvi-in-a-command-line-tool. It was originally created
@@ -59,17 +54,17 @@ Development files (headers etc) needed to develop software with %{libname}.
 %make
 
 %install
-rm -rf %{buildroot}
+%__rm -rf %{buildroot}
 %makeinstall_std
 
 %clean
-rm -rf %{buildroot}
+%__rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root)
+%doc ChangeLog AUTHORS COPYING README NEWS
 %{_bindir}/*
 %{_mandir}/man*/%{name}.*
-%doc ChangeLog AUTHORS COPYING README NEWS
 
 %files -n %{libname}
 %defattr(-,root,root)
@@ -81,7 +76,6 @@ rm -rf %{buildroot}
 %defattr(-,root,root)
 %{_includedir}/%{name}
 %{_libdir}/*.so
-%{_libdir}/*.a
-%{_libdir}/*.la
+%{_libdir}/*.*a
 %{_libdir}/pkgconfig/lib%{name}.pc
 
