@@ -33,3 +33,29 @@ Features:
 %doc ChangeLog AUTHORS COPYING README NEWS
 %{_bindir}/*
 %{_mandir}/man*/%{name}.*
+
+
+%changelog
+* Tue Mar 06 2012 Alexander Khrukin <akhrukin@mandriva.org> 0.4.2-1
++ Revision: 782399
+- version update  0.4.2
+
+* Mon Jan 30 2012 Andrey Bondrov <abondrov@mandriva.org> 0.2.19-2
++ Revision: 769743
+- Rebuild to fix .la files issue
+
+* Wed Sep 14 2011 Andrey Bondrov <abondrov@mandriva.org> 0.2.19-1
++ Revision: 699729
+- New version: 0.2.19
+
+* Fri Jan 21 2011 Funda Wang <fwang@mandriva.org> 0.2.12-1
++ Revision: 631952
+- new version 0.2.12
+
+* Wed Aug 25 2010 Funda Wang <fwang@mandriva.org> 0.2.2-1mdv2011.0
++ Revision: 573025
+- use configure2_5x
+
+  + Olivier Thauvin <nanardon@mandriva.org>
+    - import quvi
+
