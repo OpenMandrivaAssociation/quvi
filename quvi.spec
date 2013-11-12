@@ -1,5 +1,5 @@
 Name:		quvi
-Version:	0.4.2
+Version:	0.9.4
 Release:	1
 Summary:	A command line tool originally created to aid the development of libquvi
 Source0:	http://downloads.sourceforge.net/quvi/%{name}-%{version}.tar.xz
@@ -8,7 +8,7 @@ Group:		Networking/WWW
 Url:		http://quvi.sourceforge.net/
 BuildRequires:	lua-devel >= 5.1
 BuildRequires:	curl-devel
-BuildRequires:	pkgconfig(libquvi)
+BuildRequires:	pkgconfig(libquvi-0.9)
 
 
 %description
@@ -32,7 +32,7 @@ Features:
 %files
 %doc ChangeLog AUTHORS COPYING README NEWS
 %{_bindir}/*
-%{_mandir}/man*/%{name}.*
+%{_mandir}/man*/%{name}*.*
 
 
 %changelog
