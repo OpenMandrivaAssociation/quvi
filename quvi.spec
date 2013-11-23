@@ -1,5 +1,5 @@
 Name:		quvi
-Version:	0.9.4
+Version:	0.9.5
 Release:	1
 Summary:	A command line tool originally created to aid the development of libquvi
 Source0:	http://downloads.sourceforge.net/quvi/%{name}-%{version}.tar.xz

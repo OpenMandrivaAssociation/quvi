@@ -1,2 +1,4 @@
-sources:
+removed_sources:
   quvi-0.9.4.tar.xz: 8c066f16dde616623f30abeb23e297793ef62914
+sources:
+  quvi-0.9.5.tar.xz: 8040b8fef103350c462ba51fa614cb35a2bc1873
