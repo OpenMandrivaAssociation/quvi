@@ -9,6 +9,7 @@ Url:		http://quvi.sourceforge.net/
 BuildRequires:	lua-devel >= 5.1
 BuildRequires:	curl-devel
 BuildRequires:	pkgconfig(libquvi-0.9)
+BuildRequires:  pkgconfig(gobject-2.0)
 
 %description
 A libquvi-in-a-command-line-tool. It was originally created
