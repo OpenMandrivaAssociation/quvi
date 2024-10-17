@@ -5,7 +5,7 @@ Summary:	A command line tool originally created to aid the development of libquv
 Source0:	http://downloads.sourceforge.net/quvi/%{name}-%{version}.tar.xz
 License:	GPLv3
 Group:		Networking/WWW
-Url:		http://quvi.sourceforge.net/
+Url:		https://quvi.sourceforge.net/
 BuildRequires:	lua-devel >= 5.1
 BuildRequires:	curl-devel
 BuildRequires:	pkgconfig(libquvi-0.9)
