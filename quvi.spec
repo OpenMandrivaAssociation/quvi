@@ -6,6 +6,11 @@ Source0:	http://downloads.sourceforge.net/quvi/%{name}-%{version}.tar.xz
 License:	GPLv3
 Group:		Networking/WWW
 Url:		https://quvi.sourceforge.net/
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	lua-devel >= 5.1
 BuildRequires:	curl-devel
 BuildRequires:	pkgconfig(libquvi-0.9)
